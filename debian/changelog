@@ -1,3 +1,12 @@
+cef-117 (117.2.5+gda4c36a-2) unstable; urgency=medium
+
+  * Fix arch detection
+  * Add missing dependencies
+  * Downgrade CMake to 3.16 (focal compat)
+  * Update README.md
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 06 Sep 2024 15:38:02 -0400
+
 cef-117 (117.2.5+gda4c36a-1) unstable; urgency=medium
 
   * Initial release.
