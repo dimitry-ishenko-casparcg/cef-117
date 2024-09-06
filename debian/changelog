@@ -1,5 +1,5 @@
-cef-117 (117.2.5+gda4c36a-1) UNRELEASED; urgency=medium
+cef-117 (117.2.5+gda4c36a-1) unstable; urgency=medium
 
   * Initial release.
 
- -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Thu, 05 Sep 2024 23:08:38 -0400
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 06 Sep 2024 00:54:29 -0400
