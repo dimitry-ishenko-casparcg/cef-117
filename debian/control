@@ -7,7 +7,7 @@ Build-Depends:
  debhelper-compat (= 12),
  cmake,
  dh-exec,
- libasound2,
+ libasound2 (<< 1.2.11) | libasound2t64 (>= 1.2.11),
  libgtkmm-3.0-dev,
  libnspr4,
  libnss3,
