@@ -1,0 +1,15 @@
+#!/usr/bin/dh-exec
+
+# required components
+${DEB_HOST_ARCH}/Release/libcef.so usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+${DEB_HOST_ARCH}/Resources/icudtl.dat usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+${DEB_HOST_ARCH}/Release/*snapshot* usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+
+# ANGLE support
+${DEB_HOST_ARCH}/Release/libEGL.so usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+${DEB_HOST_ARCH}/Release/libGLESv2.so usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+
+# SwANGLE support
+${DEB_HOST_ARCH}/Release/libvk_swiftshader.so usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+${DEB_HOST_ARCH}/Release/libvulkan.so.1 usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
+${DEB_HOST_ARCH}/Release/vk_swiftshader_icd.json usr/lib/${DEB_HOST_MULTIARCH}/cef-117/
