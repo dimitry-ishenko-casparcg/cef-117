@@ -1,4 +1,4 @@
-cef-117 (117.2.5+gda4c36a-4) unstable; urgency=medium
+chromium-embedded-117 (117.2.5+gda4c36a-4) unstable; urgency=medium
 
   * Install cef-117.pc
 
