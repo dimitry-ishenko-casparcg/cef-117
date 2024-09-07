@@ -62,7 +62,6 @@ Package: libcef117-dev
 Architecture: amd64 arm64 armhf
 Multi-Arch: same
 Depends:
- ${shlibs:Depends},
  ${misc:Depends},
  libcef117 (= ${binary:Version})
 Description: The Chromium Embedded Framework
