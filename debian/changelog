@@ -1,3 +1,9 @@
+cef-117 (117.2.5+gda4c36a-4) unstable; urgency=medium
+
+  * Install cef-117.pc
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 06 Sep 2024 22:36:43 -0400
+
 cef-117 (117.2.5+gda4c36a-3) unstable; urgency=medium
 
   * Fix noble dependency
