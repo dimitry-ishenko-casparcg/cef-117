@@ -1,3 +1,10 @@
+chromium-embedded-117 (117.2.5+gda4c36a-6) unstable; urgency=medium
+
+  * libcef117-resources -> libcef117-data
+  * Remove unused variable
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 07 Sep 2024 16:23:14 -0400
+
 chromium-embedded-117 (117.2.5+gda4c36a-5) unstable; urgency=medium
 
   * Symlink to self to fix compilation
