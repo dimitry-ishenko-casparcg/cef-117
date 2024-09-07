@@ -22,7 +22,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
 Recommends:
- libcef117-resources (= ${binary:Version})
+ libcef117-data (= ${binary:Version})
 Description: The Chromium Embedded Framework
  The Chromium Embedded Framework (CEF) is a simple framework for embedding
  Chromium-based browsers in other applications.
@@ -39,7 +39,7 @@ Description: The Chromium Embedded Framework
  .
  This package contains the CEF library.
 
-Package: libcef117-resources
+Package: libcef117-data
 Architecture: amd64 arm64 armhf
 Multi-Arch: same
 Description: The Chromium Embedded Framework
