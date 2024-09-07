@@ -1,0 +1,60 @@
+--- a/amd64/CMakeLists.txt
++++ b/amd64/CMakeLists.txt
+@@ -253,3 +253,5 @@ if(DOXYGEN_FOUND)
+ else()
+   message(WARNING "Doxygen must be installed to generate API documentation.")
+ endif()
++
++configure_file(cef-117.pc.in cef-117.pc @ONLY)
+--- /dev/null
++++ b/amd64/cef-117.pc.in
+@@ -0,0 +1,9 @@
++prefix=@CMAKE_INSTALL_PREFIX@
++exec_prefix=${prefix}
++libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
++includedir=${prefix}/include
++
++Name: CEF 117
++Version: 117.2.5+gda4c36a
++Libs: -L${libdir}/cef-117 -lcef_dll_wrapper -lcef
++Cflags: -I${includedir}/cef-117
+--- a/arm64/CMakeLists.txt
++++ b/arm64/CMakeLists.txt
+@@ -253,3 +253,5 @@ if(DOXYGEN_FOUND)
+ else()
+   message(WARNING "Doxygen must be installed to generate API documentation.")
+ endif()
++
++configure_file(cef-117.pc.in cef-117.pc @ONLY)
+--- /dev/null
++++ b/arm64/cef-117.pc.in
+@@ -0,0 +1,9 @@
++prefix=@CMAKE_INSTALL_PREFIX@
++exec_prefix=${prefix}
++libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
++includedir=${prefix}/include
++
++Name: CEF 117
++Version: 117.2.5+gda4c36a
++Libs: -L${libdir}/cef-117 -lcef_dll_wrapper -lcef
++Cflags: -I${includedir}/cef-117
+--- a/armhf/CMakeLists.txt
++++ b/armhf/CMakeLists.txt
+@@ -253,3 +253,5 @@ if(DOXYGEN_FOUND)
+ else()
+   message(WARNING "Doxygen must be installed to generate API documentation.")
+ endif()
++
++configure_file(cef-117.pc.in cef-117.pc @ONLY)
+--- /dev/null
++++ b/armhf/cef-117.pc.in
+@@ -0,0 +1,9 @@
++prefix=@CMAKE_INSTALL_PREFIX@
++exec_prefix=${prefix}
++libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
++includedir=${prefix}/include
++
++Name: CEF 117
++Version: 117.2.5+gda4c36a
++Libs: -L${libdir}/cef-117 -lcef_dll_wrapper -lcef
++Cflags: -I${includedir}/cef-117
