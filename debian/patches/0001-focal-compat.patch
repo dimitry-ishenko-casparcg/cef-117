@@ -9,25 +9,3 @@
  
  # Only generate Debug and Release configuration types.
  set(CMAKE_CONFIGURATION_TYPES Debug Release)
---- a/arm64/CMakeLists.txt	2024-09-06 10:07:47.304480286 -0400
-+++ b/arm64/CMakeLists.txt	2023-10-12 02:54:15.000000000 -0400
-@@ -133,7 +133,7 @@
- #
- 
- # For VS2022 and Xcode 12+ support.
--cmake_minimum_required(VERSION 3.21)
-+cmake_minimum_required(VERSION 3.16)
- 
- # Only generate Debug and Release configuration types.
- set(CMAKE_CONFIGURATION_TYPES Debug Release)
---- a/armhf/CMakeLists.txt	2024-09-06 10:07:47.304480286 -0400
-+++ b/armhf/CMakeLists.txt	2023-10-12 02:54:15.000000000 -0400
-@@ -133,7 +133,7 @@
- #
- 
- # For VS2022 and Xcode 12+ support.
--cmake_minimum_required(VERSION 3.21)
-+cmake_minimum_required(VERSION 3.16)
- 
- # Only generate Debug and Release configuration types.
- set(CMAKE_CONFIGURATION_TYPES Debug Release)

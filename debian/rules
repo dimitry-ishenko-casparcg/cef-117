@@ -5,4 +5,9 @@ DH_VERBOSE = 1
 	dh $@ -D${DEB_HOST_ARCH} -Bbuild
 
 override_dh_auto_configure:
+	debian/patch --forward
 	dh_auto_configure -- -DCMAKE_BUILD_TYPE=Release
+
+override_dh_auto_install:
+	dh_auto_install
+	debian/patch --reverse

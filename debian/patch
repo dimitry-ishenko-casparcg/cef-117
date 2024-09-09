@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+for d in amd64 arm64 armhf; do
+    echo "Patching inside $d"
+    for f in $(ls -1 ./debian/patches/[0-9]*); do
+        patch --directory=$d --strip=2 --silent --dry-run "$@" < $f >/dev/null || continue
+        patch --directory=$d --strip=2 "$@" < $f
+    done
+done
