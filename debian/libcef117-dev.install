@@ -1,3 +1,6 @@
-#!/usr/bin/dh-exec
-${DEB_HOST_ARCH}/include/* usr/include/cef/117/
-build/libcef_dll_wrapper/libcef_dll_wrapper.a usr/lib/${DEB_HOST_MULTIARCH}/cef/117/
+usr/include/cef/117/
+
+usr/lib/*/cef/117/chrome-sandbox
+usr/lib/*/cef/117/libcef_dll_wrapper.a
+
+usr/lib/*/cmake/

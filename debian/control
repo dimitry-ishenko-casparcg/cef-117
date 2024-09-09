@@ -6,7 +6,6 @@ Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 12),
  cmake,
- dh-exec,
  libasound2 (<< 1.2.11) | libasound2t64 (>= 1.2.11),
  libgtkmm-3.0-dev,
  libnspr4,
@@ -62,6 +61,7 @@ Package: libcef117-dev
 Architecture: amd64 arm64 armhf
 Multi-Arch: same
 Depends:
+ ${shlibs:Depends},
  ${misc:Depends},
  libcef117 (= ${binary:Version})
 Description: The Chromium Embedded Framework

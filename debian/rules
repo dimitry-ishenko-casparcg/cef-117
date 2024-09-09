@@ -2,7 +2,7 @@
 DH_VERBOSE = 1
 
 %:
-	dh $@ -D${DEB_HOST_ARCH} -Bbuild
+	dh $@ -D${DEB_HOST_ARCH}
 
 override_dh_auto_configure:
 	debian/patch --forward
