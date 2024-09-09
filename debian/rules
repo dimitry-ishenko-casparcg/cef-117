@@ -3,3 +3,6 @@ DH_VERBOSE = 1
 
 %:
 	dh $@ -D${DEB_HOST_ARCH} -Bbuild
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_BUILD_TYPE=Release
