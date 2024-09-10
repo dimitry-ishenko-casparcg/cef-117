@@ -1,3 +1,9 @@
+chromium-embedded-117 (117.2.5+gda4c36a-8) unstable; urgency=medium
+
+  * Facilitate Windows compilation
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 10 Sep 2024 00:31:44 -0400
+
 chromium-embedded-117 (117.2.5+gda4c36a-7) unstable; urgency=medium
 
   * Add build instructions
