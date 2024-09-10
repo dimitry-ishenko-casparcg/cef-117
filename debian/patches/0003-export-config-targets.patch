@@ -39,7 +39,7 @@
 +add_library(CEF::CEF ALIAS CEF::libcef_dll_wrapper)
 --- a/amd64/libcef_dll/CMakeLists.txt
 +++ b/amd64/libcef_dll/CMakeLists.txt
-@@ -782,3 +782,30 @@ target_compile_definitions(${CEF_TARGET}
+@@ -782,3 +782,34 @@ target_compile_definitions(${CEF_TARGET}
  
  # Remove the default "lib" prefix from the resulting library.
  set_target_properties(${CEF_TARGET} PROPERTIES PREFIX "")
@@ -56,7 +56,11 @@
 +  $<BUILD_INTERFACE:${CEF_BINARY_DIR}>
 +  $<INSTALL_INTERFACE:${CEF_INSTALL_LIBDIR}>
 +)
-+target_link_libraries(${CEF_TARGET} PUBLIC cef)
++if(OS_WINDOWS)
++  target_link_libraries(${CEF_TARGET} PUBLIC libcef.lib)
++else()
++  target_link_libraries(${CEF_TARGET} PUBLIC cef)
++endif()
 +
 +install(TARGETS ${CEF_TARGET} EXPORT CEF DESTINATION ${CEF_INSTALL_LIBDIR})
 +install(EXPORT CEF FILE CEFTargets.cmake NAMESPACE CEF:: DESTINATION ${CEF_INSTALL_CMAKEDIR})
