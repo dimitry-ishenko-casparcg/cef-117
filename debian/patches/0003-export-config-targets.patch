@@ -1,14 +1,28 @@
 --- a/amd64/CMakeLists.txt
 +++ b/amd64/CMakeLists.txt
-@@ -253,3 +254,11 @@ if(DOXYGEN_FOUND)
- else()
-   message(WARNING "Doxygen must be installed to generate API documentation.")
- endif()
-+
-+#
+@@ -235,21 +235,10 @@ endif()
+ # Display configuration settings.
+ PRINT_CEF_CONFIG()
+ 
+-
+ #
+-# Define the API documentation target.
 +# Install targets.
-+#
-+
+ #
+ 
+-find_package(Doxygen)
+-if(DOXYGEN_FOUND)
+-  add_custom_target(apidocs ALL
+-    # Generate documentation in the docs/html directory.
+-    COMMAND "${DOXYGEN_EXECUTABLE}" Doxyfile
+-    # Write a docs/index.html file.
+-    COMMAND ${CMAKE_COMMAND} -E echo "<html><head><meta http-equiv=\"refresh\" content=\"0;URL='html/index.html'\"/></head></html>" > docs/index.html
+-    WORKING_DIRECTORY "${CEF_ROOT}"
+-    COMMENT "Generating API documentation with Doxygen..."
+-    VERBATIM )
+-else()
+-  message(WARNING "Doxygen must be installed to generate API documentation.")
+-endif()
 +install(DIRECTORY ${CEF_INCLUDE_DIR}/ DESTINATION ${CEF_INSTALL_INCLUDEDIR})
 +install(DIRECTORY ${CEF_BINARY_DIR}/ ${CEF_RESOURCE_DIR}/ DESTINATION ${CEF_INSTALL_LIBDIR})
 +install(PROGRAMS  ${CEF_BINARY_DIR}/chrome-sandbox DESTINATION ${CEF_INSTALL_LIBDIR})
