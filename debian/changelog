@@ -1,3 +1,11 @@
+chromium-embedded-117 (117.2.5+gda4c36a-9) unstable; urgency=medium
+
+  * Clarify why we need CMake 3.16
+  * Remove doc target
+  * Rework patching
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 13 Sep 2024 14:44:41 -0400
+
 chromium-embedded-117 (117.2.5+gda4c36a-8) unstable; urgency=medium
 
   * Facilitate Windows compilation
