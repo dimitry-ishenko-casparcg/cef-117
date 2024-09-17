@@ -1,3 +1,11 @@
+chromium-embedded-117 (117.2.5+gda4c36a-11) unstable; urgency=medium
+
+  * Adjust for the updated install patch
+  * Reduce patch footprint (breaking commit)
+  * Better patch name
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 17 Sep 2024 16:27:37 -0400
+
 chromium-embedded-117 (117.2.5+gda4c36a-10) unstable; urgency=medium
 
   * CMake 3.16 compat
