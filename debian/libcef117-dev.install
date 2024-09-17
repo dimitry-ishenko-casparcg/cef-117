@@ -1,6 +1,6 @@
-usr/include/cef/117/
+usr/lib/cef/*/*/include/
 
-usr/lib/*/cef/117/chrome-sandbox
-usr/lib/*/cef/117/libcef_dll_wrapper.a
+usr/lib/cef/*/*/chrome-sandbox
+usr/lib/cef/*/*/libcef_dll_wrapper.a
 
 usr/lib/*/cmake/

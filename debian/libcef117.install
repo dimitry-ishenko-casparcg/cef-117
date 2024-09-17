@@ -1,14 +1,14 @@
 # required components
-usr/lib/*/cef/117/libcef.so
-usr/lib/*/cef/117/icudtl.dat
-usr/lib/*/cef/117/snapshot_blob.bin
-usr/lib/*/cef/117/v8_context_snapshot.bin
+usr/lib/cef/*/*/libcef.so
+usr/lib/cef/*/*/icudtl.dat
+usr/lib/cef/*/*/snapshot_blob.bin
+usr/lib/cef/*/*/v8_context_snapshot.bin
 
 # ANGLE support
-usr/lib/*/cef/117/libEGL.so
-usr/lib/*/cef/117/libGLESv2.so
+usr/lib/cef/*/*/libEGL.so
+usr/lib/cef/*/*/libGLESv2.so
 
 # SwANGLE support
-usr/lib/*/cef/117/libvk_swiftshader.so
-usr/lib/*/cef/117/libvulkan.so.1
-usr/lib/*/cef/117/vk_swiftshader_icd.json
+usr/lib/cef/*/*/libvk_swiftshader.so
+usr/lib/cef/*/*/libvulkan.so.1
+usr/lib/cef/*/*/vk_swiftshader_icd.json

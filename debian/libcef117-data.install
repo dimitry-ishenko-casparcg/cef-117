@@ -1,2 +1,2 @@
-usr/lib/*/cef/117/locales
-usr/lib/*/cef/117/*.pak
+usr/lib/cef/*/*/locales
+usr/lib/cef/*/*/*.pak
